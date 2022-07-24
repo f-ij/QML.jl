@@ -480,9 +480,7 @@ end
 struct ListModelFunctionUndefined <: Exception end
 defaultsetter(array, value, index) = throw(ListModelFunctionUndefined())
 defaultconstructor(roles...) = throw(ListModelFunctionUndefined())
-
-get_julia_data(model::QAbstractItemModel) = get_julia_data(get_model_data(model))
-
+          
 mutable struct ListModelData
   values::AbstractArray
   roles::QStringList
