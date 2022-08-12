@@ -169,9 +169,9 @@ function julia_call(f, argptr::Ptr{Cvoid})
   return result.cpp_object
 end
 
-function get_julia_call()
-  return @cfunction(julia_call, Ptr{Cvoid}, (Any,Ptr{Cvoid}))
-end
+# function get_julia_call()
+#   return @cfunction(julia_call, Ptr{Cvoid}, (Any,Ptr{Cvoid}))
+# end
 
 # QQmlPropertyMap indexing interface
 Base.getindex(propmap::QQmlPropertyMap, key::AbstractString) = value(value(propmap, key))
