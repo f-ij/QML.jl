@@ -15,6 +15,7 @@ jlqml_jll = "6b5019fb-a83d-5b4e-a9f7-678a36c28df7"
 
 [compat]
 julia = "1.6"
+jlqml_jll = "0.4.0"
 
 [extras]
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
